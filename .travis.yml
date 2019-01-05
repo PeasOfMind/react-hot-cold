@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: i97JXh+N1llC+jqedNm8A4iLoWRQxJn9yksKxVNO0zSRTjm1DkPGEiKCA/bjkYKHniPYdZ2L+saOz+mUGm301x2dW5Mp8Ik16rE7h3vP50DdfGaXTGd8UNA6JLfqqP74S3bUjZ38aO3fmzhv23dgwBtKGTk7HTW4lF5IzqwpS1Y0WYlvRrkM/7YvrNQ1ANeiBpLwVzN6H/EzQf8uhePdWSDJ+LV5jBy2PG1RzPx68tHJbLCbNdETOGgzNEzOmXR+f3xvK0IEDfR8Uy7Basz/QKBW4ohuDMMnpTtjruQft/aZZ8e1fTxIEeRY7LO+mk8g7mt0gC43tMbpYDSsDXiEBZFj6pV5Jqpbnmjt9Yg/2lpxKO6PPYDK2GIkfzvBczZmbAtOejEF1QXuPsPybIEHu9Mki8M5yECPg6DcVHa56gNH0kV7z1BrIOgNvMK9qTJTwmZU0Ojyug4ttoGv4dVFG/lLQ6jWzAqrG/J7pnS/eTlhYV5ZUsmNOIcaR0QEz71L1fW2oDTdAjpWdfDp6IHwLffJ4rxWpttKFgfWm5XXuP19YcvUnBn8YIZQNUaEBUmeEb0s8yq2HK9A58IVsfVbtN9ZKViqLw3e7xJWTFK3y351ns9lZbFuY3mXlkj9/j8vemKeZPGVZtNg5/AHkyZHJ2Nzxs60qcSZlgemaIc9Ay8=
+  app: evening-tor-62732
+  on:
+    repo: PeasOfMind/react-hot-cold
