@@ -7,6 +7,7 @@ export default class GuessForm extends React.Component {
     event.preventDefault();
 
     if (this.props.onMakeGuess) {
+      console.log('firing onSubmit')
       const value = this.input.value;
       this.props.onMakeGuess(value);
     }
